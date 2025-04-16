@@ -3,10 +3,13 @@
     "version": "1.0.0",
     "description": "Custom Vanilla JavaScript SPA",
     "scripts": {
-      "dev": "live-server --entry-file=index.html --port=3000",
-      "start": "http-server -c-1 --spa -p 80",
-      "build": "echo 'No build step. Using pure JS.'",
-      "devstart": "npm run dev"
+        "dev": "live-server --entry-file=index.html --port=3000",
+        "start": "http-server ./public -p 8080 --spa",
+        "build": "echo 'No build step. Using pure JS.'",
+        "devstart": "npm run dev"
+    },
+    "devDependencies": {
+        "http-server": "^14.1.1",
+        "live-server": "^1.2.2"
     }
-  }
-  
+}
