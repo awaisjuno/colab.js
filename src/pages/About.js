@@ -15,5 +15,4 @@ const About = (params) => {
     keywords: 'home, SPA, custom, JavaScript'
   };
   
-  // Exporting the Home function as default, along with SEO data
   export default About;
