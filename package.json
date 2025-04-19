@@ -3,13 +3,16 @@
     "version": "1.0.0",
     "description": "Custom Vanilla JavaScript SPA",
     "scripts": {
-        "dev": "live-server --entry-file=index.html --port=3000",
-        "start": "http-server ./public -p 8080 --spa",
-        "build": "echo 'No build step. Using pure JS.'",
-        "devstart": "npm run dev"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
     },
     "devDependencies": {
+        "autoprefixer": "^10.4.21",
         "http-server": "^14.1.1",
-        "live-server": "^1.2.2"
+        "live-server": "^1.2.0",
+        "postcss": "^8.5.3",
+        "tailwindcss": "^4.1.4",
+        "vite": "^6.3.2"
     }
 }
